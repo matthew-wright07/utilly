@@ -17,7 +17,6 @@ export default function Footer(){
                     <h3>Pages</h3>
                     <HoverLink href="/" text="Home"/>
                     <HoverLink href="/tools" text="Tools"/>
-                    <HoverLink href="/about" text="About"/>
                 </div>
                 <div className="flex flex-col justify-self-center">
                     <h3>Legal</h3>
@@ -28,8 +27,7 @@ export default function Footer(){
                 </div>
                 <div className="flex flex-col justify-self-end">
                     <h3>Support</h3>
-                    <HoverLink href="/beta" text="Sign Up"/>
-                    <HoverLink href="/beta" text="Sign In"/>
+                    <HoverLink href="/about" text="About"/>
                     <HoverLink href="/contact" text="Contact"/>
                 </div>
             </div>
