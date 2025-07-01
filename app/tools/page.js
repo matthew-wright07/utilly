@@ -1,4 +1,3 @@
-import Start from "@/components/Home/Start";
 import ToolGrid from "@/components/Tools/ToolGrid";
 
 export const metadata = {
@@ -8,9 +7,6 @@ export const metadata = {
 
 export default function ToolsPage(){
     return (
-        <>
-        <ToolGrid/>
-        <Start/>
-        </>
+      <ToolGrid/>
     )
 }
