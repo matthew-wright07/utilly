@@ -18,8 +18,8 @@ export default function Header(){
                     <HoverLink href="/contact" text="Contact"/>
                 </div>
                 <div className="flex gap-2">
-                    <OutlineButton text="Sign Up" href="/beta"/>
-                    <Button text="Login" href="/beta"/>
+                    <OutlineButton text="Explore" href="/about"/>
+                    <Button text="Start" href="/tools"/>
                 </div>
             </div>
         </Wrapper>
