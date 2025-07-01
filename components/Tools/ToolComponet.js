@@ -2,8 +2,18 @@
 
 import { useState } from "react";
 import Wrapper from "../Wrappers/Wrapper";
+import { tools } from "../../lib/toolsList";
+import { usePathname } from 'next/navigation';
 
-export default function Tool({title, description, calculate,items}){
+export default function Tool(){
+    const pathName = usePathname()
+    const slug = pathName.split("/").pop();
+    const tool = tools.find(t => t.slug === slug);
+    const title = tool.title;
+    const description = tool.description;
+    const calculate = tool.calculate;
+    const items = tool.items;
+
     const [value, setValue] = useState("");
     const [result, setResult] = useState("");
 

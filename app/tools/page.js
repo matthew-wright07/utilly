@@ -1,6 +1,10 @@
 import Start from "@/components/Home/Start";
-import Header from "@/components/Layout/Header";
 import ToolGrid from "@/components/Tools/ToolGrid";
+
+export const metadata = {
+  title: "Tools | Utilly",
+  description: "Your All In One Tool Kit"
+};
 
 export default function ToolsPage(){
     return (

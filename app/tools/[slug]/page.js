@@ -1,16 +1,21 @@
-"use client"
-
-import Tool from "@/components/Tools/ToolComponet";
+import ToolComponet from "@/components/Tools/ToolComponet";
 import { tools } from "../../../lib/toolsList";
-import { usePathname } from 'next/navigation';
-import Header from "@/components/Layout/Header";
-import Footer from "@/components/Layout/Footer";
 
-export default function Tools({}){
-    const pathName = usePathname()
-    const slug = pathName.split("/").pop();
+export async function generateMetadata({ params: paramsPromise }) {
+    const params = await paramsPromise;
+    const slug = params.slug;
+    
     const tool = tools.find(t => t.slug === slug);
+    if (!tool) return {};
+
+    return {
+        title: `${tool.title} | Utilly`,
+        description: tool.description,
+    };
+}
+
+export default function Tools(){
     return (
-        <Tool title={tool.title} description={tool.description} calculate={tool.calculate} items={tool.items}/>
+        <ToolComponet/>
     )
 }
