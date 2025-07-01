@@ -6,7 +6,7 @@ export default function Footer(){
         <Wrapper>
             <div className="grid grid-cols-4 items-start">
                 <div className="flex flex-col gap-2">
-                    <a href="/" className="flex gap-2">
+                    <a href="/" className="flex gap-2 items-center">
                         <img src="/logo.svg" className="w-8"/>
                         <h2>Utilly</h2>
                     </a>

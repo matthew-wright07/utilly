@@ -7,7 +7,7 @@ export default function Header(){
     return (
         <Wrapper>
             <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
-                <a href="/" className="flex gap-2">
+                <a href="/" className="flex gap-2 items-center">
                     <img src="/logo.svg" className="w-8"/>
                     <h2>Utilly</h2>
                 </a>
