@@ -4,6 +4,7 @@ import { useState } from "react";
 import Wrapper from "../Wrappers/Wrapper";
 import { tools } from "../../lib/toolsList";
 import { usePathname } from 'next/navigation';
+import ToolGrid from "./ToolGrid";
 
 export default function Tool(){
     const pathName = usePathname()
@@ -30,6 +31,7 @@ export default function Tool(){
     }
 
     return (
+        <>
         <Wrapper>
             <div className="flex flex-col gap-2 text-center">
                 <h1>{title}</h1>
@@ -49,5 +51,7 @@ export default function Tool(){
                 <p>{description}</p>
             </div>
         </Wrapper>
+        <ToolGrid/>
+        </>
     )
 }
