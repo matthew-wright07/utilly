@@ -4,7 +4,7 @@ import HoverLink from "./HoverLink";
 export default function Footer(){
     return (
         <Wrapper>
-            <div className="grid grid-cols-4 items-start">
+            <footer className="grid grid-cols-4 items-start">
                 <div className="flex flex-col gap-2">
                     <a href="/" className="flex gap-2 items-center">
                         <img src="/logo.svg" className="w-8"/>
@@ -30,7 +30,7 @@ export default function Footer(){
                     <HoverLink href="/about" text="About"/>
                     <HoverLink href="/contact" text="Contact"/>
                 </div>
-            </div>
+            </footer>
         </Wrapper>
     )
 }
