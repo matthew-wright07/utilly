@@ -8,7 +8,7 @@ export default function Hero(){
                     <source src="/herobg.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <h1 className="relative z-10 text-background text-center">Your All In One Tool Kit</h1>
+                <h1 className="relative z-10 text-background text-center">Your All In One Free Tool Kit</h1>
             </div>
         </Wrapper>
     )
