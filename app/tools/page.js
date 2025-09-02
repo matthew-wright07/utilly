@@ -2,7 +2,7 @@ import ToolGrid from "@/components/Tools/ToolGrid";
 
 export const metadata = {
   title: "Tools | Utilly",
-  description: "Your All In One Tool Kit"
+  description: "Explore all the powerful tools on Utilly.io designed to simplify tasks, automate workflows, and boost productivity for individuals and teams."
 };
 
 export default function ToolsPage(){

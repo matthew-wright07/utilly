@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: "Utilly",
-  description: "Your All In One Tool Kit",
+  description: "Utilly.io helps you simplify everyday tasks, automate workflows, and increase productivity with powerful, easy-to-use tools for individuals and teams.",
   icons: {
     icon:"/logo.svg",
   }
