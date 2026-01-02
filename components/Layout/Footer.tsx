@@ -1,5 +1,6 @@
 import Wrapper from "../Wrappers/Wrapper";
 import HoverLink from "./HoverLink";
+import Image from "next/image";
 
 export default function Footer(){
     return (
@@ -7,7 +8,14 @@ export default function Footer(){
             <footer className="grid grid-cols-4 items-start">
                 <div className="flex flex-col gap-2">
                     <a href="/" className="flex gap-2 items-center">
-                        <img src="/logo.svg" className="w-8"/>
+                        <Image
+                            src="/logo.svg"
+                            alt="Utilly logo"
+                            width={500}
+                            height={500}
+                            priority
+                            className="w-8"
+                        />
                         <h2>Utilly</h2>
                     </a>
                     <p>Phone: 512-586-4786</p>
